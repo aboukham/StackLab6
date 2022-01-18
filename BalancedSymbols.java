@@ -1,5 +1,6 @@
 package lab6.StackLab6;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 public class BalancedSymbols {
@@ -22,6 +23,8 @@ public class BalancedSymbols {
     }
 
     public static void main(String[] args){
-        System.out.println(isBalancedExpression("{[(10 + x) * (3 +x)] * [3x + 2]}"));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a mathematical expression:");
+        System.out.println(isBalancedExpression(sc.nextLine()));
     }
 }
